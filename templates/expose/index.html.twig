@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Expose index{% endblock %}
+
+{% block body %}
+    <h1>Expose index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for expose in exposes %}
+            <tr>
+                <td>{{ expose.id }}</td>
+                <td>{{ expose.name }}</td>
+                <td>{{ expose.description }}</td>
+                <td>
+                    <a href="{{ path('expose_show', {'id': expose.id}) }}">show</a>
+                    <a href="{{ path('expose_edit', {'id': expose.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('expose_new') }}">Create new</a>
+{% endblock %}

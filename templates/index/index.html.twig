@@ -9,8 +9,19 @@
         <h1>{{ home.title }}</h1>
         <p>{{ home.paragraph }}</p>
         <img class="home_picture"
-        src="../images/catblak.jpeg"
+        src="../images/{{ home.image }}"
         alt="Grapefruit slice atop a pile of other slices">
     {% endfor %}
 </div>
+
+<div class="example-wrapper">
+    {% for artist in artist %}
+        <h1>{{ artist.name }}</h1>
+        <p>{{ artist.description }}</p>
+        <img class="home_picture"
+        src="../images/{{ artist.image }}"
+        alt="Grapefruit slice atop a pile of other slices">
+    {% endfor %}
+</div>
+
 {% endblock %}

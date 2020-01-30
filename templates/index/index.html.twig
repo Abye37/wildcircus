@@ -24,4 +24,14 @@
     {% endfor %}
 </div>
 
+<div class="example-wrapper">
+    {% for expose in expose %}
+        <h1>{{ expose.name }}</h1>
+        <p>{{ expose.description }}</p>
+        <img class="home_picture"
+        src="../images/{{ expose.image }}"
+        alt="Grapefruit slice atop a pile of other slices">
+    {% endfor %}
+</div>
+
 {% endblock %}

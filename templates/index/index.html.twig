@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}wildcircus{% endblock %}
+
+{% block body %}
+
+<div class="example-wrapper">
+    {% for home in home %}
+        <h1>{{ home.title }}</h1>
+        <p>{{ home.paragraph }}</p>
+        <img class="home_picture"
+        src="../images/catblak.jpeg"
+        alt="Grapefruit slice atop a pile of other slices">
+    {% endfor %}
+</div>
+{% endblock %}

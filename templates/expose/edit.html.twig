@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Expose{% endblock %}
+
+{% block body %}
+    <h1>Edit Expose</h1>
+
+    {{ include('expose/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('expose_index') }}">back to list</a>
+
+    {{ include('expose/_delete_form.html.twig') }}
+{% endblock %}

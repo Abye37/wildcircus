@@ -34,10 +34,28 @@
             <h1>{{ expose.name }}</h1>
             <p>{{ expose.description }}</p>
             <img class="home_picture"
-            src="../images/{{ expose.image }}"
-            alt="Grapefruit slice atop a pile of other slices">
+                src="../images/{{ expose.image }}"
+                alt="Grapefruit slice atop a pile of other slices">
         </div>
     {% endfor %}
+</div>
+<!-- Contact part -->
+<div>    
+    <div>
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="user_name" />
+    </div>
+    <div>
+        <label for="email">E-mail :</label>
+        <input type="email" id="mail" name="user_email" />
+    </div>
+    <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="user_message"></textarea>
+    </div>
+    <div class="button">
+        <button type="submit">Send</button>
+    </div>
 </div>
 
 {% endblock %}

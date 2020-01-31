@@ -24,3 +24,6 @@ This starter kit is here to easily install wilcircus repository.
 ### Windows Users
 If you develop on Windows, you should edit you git configuration to change your end of line rules with this command :
 `git config --global core.autocrlf true`
+
+You can look wireframe : https://app.moqups.com/Nii72BGlEF/view/page/a894cf460
+BDD model here :https://docs.google.com/drawings/d/1PxOeRl-3FU2pU_AG04lIBfgWX2IfLQhu0vmddHEshjk/edit?usp=sharing

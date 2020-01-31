@@ -15,8 +15,8 @@ This starter kit is here to easily install wilcircus repository.
 5. Copy `.env` file and modify new copy in `.env.local`
 6. Replace user, password and db_name in the line `DATABASE_URL=mysql://db_user:db_password@127.0.0.1:3306/db_name`in`.env.local`
 ### Working
-1. Connect in mysql and create database wildcircusfive whith CREATE DATABASE; and check resulst whith SHOW DATABASES;  .
-2. Import wildcircusfive.sql whith mysql -u username -p databasename<wildcircusfive.sql (think replace username,databasename)
+1. Connect in mysql and create database wildcircusfive whith `CREATE DATABASE;` and check resulst whith `SHOW DATABASES;`.
+2. Import wildcircusfive.sql whith `mysql -u username -p wildcircusfive<wildcircusfive.sql` (think replace username,databasename)
 3. Enter your password. Dump is completed and you can check your database.
 5. Run `php bin/console server:start` to launch your local php web server
 6. Run `yarn run dev --watch` to launch your local server for assets
